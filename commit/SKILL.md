@@ -6,6 +6,7 @@ description: Create a git commit using conventional commits format.
 # Commit
 
 ## Rules
+- Before committing, check the current branch. If on main/master, warn and ask whether to create a new branch.
 - Use conventional commits format (feat, fix, refactor, test, docs, chore, etc.).
 - One logical change per commit.
 - Commit message should focus on why, not what.

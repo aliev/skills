@@ -9,6 +9,7 @@ Custom skills for Claude Code that enforce a disciplined development workflow.
 | [TDD](/tdd) | `/tdd` | Strict RED-GREEN cycle with human checkpoints |
 | [Refactor](/refactor) | `/refactor` | Improve code structure while tests stay green |
 | [Commit](/commit) | `/commit` | Git commit with conventional commits format |
+| [PR](/pr) | `/pr` | Draft pull request via `gh` CLI |
 
 ## Workflow
 
