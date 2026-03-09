@@ -6,7 +6,11 @@
 
 ## How to understand code
 
-Try to break it mentally. "What happens if this gets nil? An empty list? Two identical values?" If you can predict the behavior — you understand it. If not — ask the model and verify the answer against the code.
+Don't memorize the solution — understand **why** it's shaped that way. If you understand the reason, you can reconstruct the solution a week, a month, a year later.
+
+Ask yourself: "why this way and not another?" If you can answer — you understand. If not — ask the model "what alternatives did you consider?" Comparing options builds understanding better than memorizing one.
+
+Then try to break it mentally. "What happens if this gets nil? An empty list? Two identical values?" If you can predict the behavior — you understand it. If not — ask the model and verify the answer against the code.
 
 ## Stay a developer, not just an approver
 
