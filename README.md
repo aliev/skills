@@ -29,7 +29,7 @@ The skills are designed to work together:
 
 ### At every CHECKPOINT
 
-"Looks ok" is not a review. Ask yourself:
+Pause and review before approving. "Looks ok" is not a review. Ask yourself:
 
 - Can I explain this change a week from now?
 - Why this way and not another?
