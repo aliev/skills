@@ -54,6 +54,29 @@ Balance:
 
 The key is to never fully settle into one mode.
 
+## Q&A
+
+**Can I edit code myself at CHECKPOINT?**
+Yes. Ask the model to commit, make your changes, then say "review" or "continue". The model will read the current state of the files.
+
+**Can I commit first, then refactor?**
+Yes, and it's safer. The commit locks the green state. If refactoring goes wrong, you can always roll back.
+
+**Can I write the test myself?**
+Yes. Write a failing test, then tell the model "I wrote a test, make it GREEN." You train decomposition (what to test next), the model handles implementation. At CHECKPOINT you understand the code deeper because you formulated the expectation.
+
+**When are abstractions introduced?**
+At CHECKPOINT, through dialogue. GREEN produces naive code on purpose. You see the duplication and decide together with the model what to extract. Use `/refactor` for this.
+
+**Do I need a separate skill for DDD, SOLID, etc.?**
+No. At CHECKPOINT just say "extract this into a value object" or "this violates SRP, split it." The model understands these concepts without a dedicated skill. If you notice yourself repeating the same instructions — then make a skill.
+
+**Will Claude forget the skill in a long session?**
+The skill is injected once when you call `/tdd`. In long conversations context gets compressed. If the model drifts — call `/tdd` again to re-inject.
+
+**How do I avoid degrading as a developer?**
+Alternate. Sometimes write the test yourself. Sometimes refactor yourself. The CHECKPOINT is not just for controlling the model — it's for keeping yourself in context. As long as you think at every pause, you don't degrade.
+
 ## Design principles
 
 - **Minimal instructions.** Claude already knows TDD, refactoring, and git. Skills only add constraints that differ from default behavior.
