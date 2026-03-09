@@ -25,6 +25,12 @@ The skills are designed to work together:
     continue  → next test
 ```
 
+## Design principles
+
+- **Minimal instructions.** Claude already knows TDD, refactoring, and git. Skills only add constraints that differ from default behavior.
+- **Human in the loop.** Every behavioral change pauses for review. No runaway implementation.
+- **Composable.** Each skill does one thing. Combine them at checkpoints.
+
 ## Best practices
 
 ### At every CHECKPOINT
@@ -52,12 +58,6 @@ Balance:
 - If you don't understand the model's solution — don't accept it.
 
 The key is to never fully settle into one mode.
-
-## Design principles
-
-- **Minimal instructions.** Claude already knows TDD, refactoring, and git. Skills only add constraints that differ from default behavior.
-- **Human in the loop.** Every behavioral change pauses for review. No runaway implementation.
-- **Composable.** Each skill does one thing. Combine them at checkpoints.
 
 ## Inspiration
 
