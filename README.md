@@ -53,7 +53,7 @@ Writing everything yourself is thorough but impractical. Approving everything bl
 Balance:
 - Design, decomposition, naming, choice of abstractions — yours.
 - Boilerplate, migrations, edge case tests — model's.
-- Sometimes write the test yourself, give the model only GREEN.
+- Sometimes write the failing test yourself, then let the model implement just enough to pass it.
 - Sometimes refactor yourself, ask the model just to run the tests.
 - If you don't understand the model's solution — don't accept it.
 
