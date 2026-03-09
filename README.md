@@ -63,17 +63,7 @@ Yes. Ask the model to commit, make your changes, then say "review" or "continue"
 Yes, and it's safer. The commit locks the green state. If refactoring goes wrong, you can always roll back.
 
 **Can I write the test myself?**
-Yes. Write a failing test, then tell the model "I wrote a test, make it GREEN." You train decomposition (what to test next), the model handles implementation. At CHECKPOINT you understand the code deeper because you formulated the expectation.
-
-Example flow:
-1. You call `/tdd` and describe the task
-2. Model writes the first test → GREEN → CHECKPOINT
-3. You say "/commit, continue"
-4. Model writes the second test → GREEN → CHECKPOINT
-5. You decide to write the next test yourself — open the file, write a failing test
-6. Tell the model: "I wrote a test, make it GREEN"
-7. Model reads your test, implements minimal code, runs tests → CHECKPOINT
-8. You review the implementation — do you understand why it's shaped that way?
+Yes. Write a failing test, then tell the model "I wrote a test, make it GREEN." See [example flow](/tdd/README.md#example-writing-the-test-yourself).
 
 **When are abstractions introduced?**
 At CHECKPOINT, through dialogue. GREEN produces naive code on purpose. You see the duplication and decide together with the model what to extract. Use `/refactor` for this.
@@ -98,18 +88,9 @@ Alternate. Sometimes write the test yourself. Sometimes refactor yourself. The C
 Articles:
 
 - [Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/) — Simon Willison
-
-> "The old excuses for not writing them — that they're time consuming and expensive to constantly rewrite while a codebase is rapidly evolving — no longer hold when an agent can knock them into shape in just a few minutes."
 - [Martin Fowler on AI-assisted TDD](https://martinfowler.com/fragments/2026-02-18.html) — Martin Fowler
-
-Similar skill (more verbose):
-
-- [mattpocock/skills/tdd](https://github.com/mattpocock/skills/tree/main/tdd)
-
-Research:
-- [How AI Impacts Skill Formation](https://www.anthropic.com/research/AI-assistance-coding-skills) — Anthropic (2026). Full delegation hurts learning; reviewing and questioning AI code does not.
-
-> "The participants who showed stronger mastery used AI assistance not just to produce code but to build comprehension while doing so — whether by asking follow-up questions, requesting explanations, or posing conceptual questions while coding independently."
+- [How AI Impacts Skill Formation](https://www.anthropic.com/research/AI-assistance-coding-skills) — Anthropic (2026)
+- [mattpocock/skills/tdd](https://github.com/mattpocock/skills/tree/main/tdd) — similar skill (more verbose)
 
 Books:
 

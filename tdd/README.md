@@ -37,6 +37,17 @@ Claude reports what was done and **stops**. The human reviews and decides what h
 - **Design discussions** — CHECKPOINT is the ideal moment. Ask Claude to propose patterns, extract classes, simplify. You approve or adjust.
 - **Long sessions** — the skill is injected once when you call `/tdd`. If Claude drifts in a long conversation, call `/tdd` again to re-inject the instructions.
 
+## Example: writing the test yourself
+
+1. You call `/tdd` and describe the task
+2. Model writes the first test → GREEN → CHECKPOINT
+3. You say "/commit, continue"
+4. Model writes the second test → GREEN → CHECKPOINT
+5. You decide to write the next test yourself — open the file, write a failing test
+6. Tell the model: "I wrote a test, make it GREEN"
+7. Model reads your test, implements minimal code, runs tests → CHECKPOINT
+8. You review the implementation — do you understand why it's shaped that way?
+
 ## Pairs with
 
 - `/refactor` — call at CHECKPOINT to improve code structure while tests are green.
