@@ -15,13 +15,15 @@ description: Create a draft pull request using gh CLI.
 - If the repo has a PR template, follow it.
 - If no template, use this format:
 
+```markdown
 ## Why
 <why this change exists, not what files changed>
 
 ## Changes
 <brief list derived from branch commits>
 
-<link related issues with Closes/Fixes #N>
+Closes/Fixes #N
+```
 
 ## Rules
 - Always draft. The human decides when to publish.
