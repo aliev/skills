@@ -104,6 +104,11 @@ Similar skill (more verbose):
 
 - [mattpocock/skills/tdd](https://github.com/mattpocock/skills/tree/main/tdd)
 
+Research:
+- [How AI Impacts Skill Formation](https://www.anthropic.com/research/AI-assistance-coding-skills) — Anthropic (2026). Full delegation hurts learning; reviewing and questioning AI code does not.
+
+> "The participants who showed stronger mastery used AI assistance not just to produce code but to build comprehension while doing so — whether by asking follow-up questions, requesting explanations, or posing conceptual questions while coding independently."
+
 Books:
 
 - _Clean Architecture_ — Robert C. Martin
