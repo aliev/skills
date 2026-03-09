@@ -65,6 +65,16 @@ Yes, and it's safer. The commit locks the green state. If refactoring goes wrong
 **Can I write the test myself?**
 Yes. Write a failing test, then tell the model "I wrote a test, make it GREEN." You train decomposition (what to test next), the model handles implementation. At CHECKPOINT you understand the code deeper because you formulated the expectation.
 
+Example flow:
+1. You call `/tdd` and describe the task
+2. Model writes the first test → GREEN → CHECKPOINT
+3. You say "/commit, continue"
+4. Model writes the second test → GREEN → CHECKPOINT
+5. You decide to write the next test yourself — open the file, write a failing test
+6. Tell the model: "I wrote a test, make it GREEN"
+7. Model reads your test, implements minimal code, runs tests → CHECKPOINT
+8. You review the implementation — do you understand why it's shaped that way?
+
 **When are abstractions introduced?**
 At CHECKPOINT, through dialogue. GREEN produces naive code on purpose. You see the duplication and decide together with the model what to extract. Use `/refactor` for this.
 
