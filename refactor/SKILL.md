@@ -27,6 +27,9 @@ Improve code quality without changing observable behavior.
 - Introducing abstractions too early.
 - Creating thin wrapper modules that hide no real complexity.
 
+## Pragmatism
+- If further refactoring would not meaningfully improve the code, say so.
+
 ## After refactoring
 - Run the full test suite.
 - Confirm all tests pass.
