@@ -98,6 +98,8 @@ Alternate. Sometimes write the test yourself. Sometimes refactor yourself. The C
 Articles:
 
 - [Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/) — Simon Willison
+
+> "The old excuses for not writing them — that they're time consuming and expensive to constantly rewrite while a codebase is rapidly evolving — no longer hold when an agent can knock them into shape in just a few minutes."
 - [Martin Fowler on AI-assisted TDD](https://martinfowler.com/fragments/2026-02-18.html) — Martin Fowler
 
 Similar skill (more verbose):
