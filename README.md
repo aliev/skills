@@ -25,6 +25,10 @@ The skills are designed to work together:
     continue  → next test
 ```
 
+## [Best practices](PRACTICES.md)
+
+How to stay a developer while working with AI — reviewing, understanding code, keeping your skills sharp.
+
 ## Design principles
 
 - **Minimal instructions.** Claude already knows TDD, refactoring, and git. Skills only add constraints that differ from default behavior.
