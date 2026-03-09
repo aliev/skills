@@ -5,9 +5,6 @@ description: Improve code structure while preserving behavior. All tests must re
 
 # Refactor
 
-## Goal
-Improve code quality without changing observable behavior.
-
 ## Rules
 - Do not change observable behavior.
 - All tests must remain green.
