@@ -74,6 +74,9 @@ No. At CHECKPOINT just say "extract this into a value object" or "this violates 
 **Will Claude forget the skill in a long session?**
 The skill is injected once when you call `/tdd`. In long conversations context gets compressed. If the model drifts — call `/tdd` again to re-inject.
 
+**If AI writes the code, does readability still matter?**
+Yes. You review code at every CHECKPOINT — unreadable code is impossible to review properly. And the model reads your codebase too — the cleaner it is, the better it understands context and writes the next change.
+
 **How do I avoid degrading as a developer?**
 Alternate. Sometimes write the test yourself. Sometimes refactor yourself. The CHECKPOINT is not just for controlling the model — it's for keeping yourself in context. As long as you think at every pause, you don't degrade.
 
