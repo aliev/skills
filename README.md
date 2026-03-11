@@ -10,6 +10,7 @@ Custom skills for Claude Code that enforce a disciplined development workflow.
 | [Refactor](/refactor) | `/refactor` | Improve code structure while tests stay green |
 | [Commit](/commit)     | `/commit`   | Git commit with conventional commits format   |
 | [PR](/pr)             | `/pr`       | Draft pull request via `gh` CLI               |
+| [Note](/note)         | `/note`     | Save insight from conversation to local notes |
 
 ## Workflow
 
